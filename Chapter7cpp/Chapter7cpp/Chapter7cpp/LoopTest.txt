@@ -16,5 +16,5 @@ BEGIN {main}
             WHEN i > 20 ==>;
         AGAIN;
     END;
-END.
+END
 

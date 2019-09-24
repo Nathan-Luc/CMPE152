@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string line;
+
+    do
+    {
+        getline(cin, line);
+        if (!cin.eof())
+        {
+            if (line[0] != ' ')
+            {
+                int pos1 = line.find(".o");
+                string name = line.substr(0, pos1);
+                int pos2 = line.find(name, pos1);
+                string path = line.substr(pos1+4, pos2 - pos1 - 4);
+                cout << path << line << endl;
+            }
+            else
+            {
+                cout << line << endl;
+            }
+        }
+    } while (!cin.eof());
+}
