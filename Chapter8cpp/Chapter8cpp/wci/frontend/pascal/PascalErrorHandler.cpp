@@ -52,8 +52,8 @@ void PascalErrorHandler::abort_translation(PascalErrorCode error_code,
     // Notify the parser's listeners and then abort.
     string error_message = "FATAL ERROR: " +
                            PascalError::SYNTAX_ERROR_MESSAGES[error_code];
-    SYNTAX_ERROR_MESSAGE.line_number = -1;
-    SYNTAX_ERROR_MESSAGE.content.syntax_error.position = 0;
+    SYNTAX_ERROR_MESSAGE.line_number = 0;
+    SYNTAX_ERROR_MESSAGE.content.syntax_error.position = -1;
     SYNTAX_ERROR_MESSAGE.content.syntax_error.token_text = "";
     SYNTAX_ERROR_MESSAGE.content.syntax_error.error_message = error_message.c_str();
     parser->send_message(SYNTAX_ERROR_MESSAGE);

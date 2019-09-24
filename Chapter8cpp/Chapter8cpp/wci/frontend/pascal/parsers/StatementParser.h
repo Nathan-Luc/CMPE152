@@ -10,7 +10,6 @@
 #define STATEMENTPARSER_H_
 
 #include <string>
-#include <set>
 #include "../PascalParserTD.h"
 #include "../PascalToken.h"
 #include "../../../intermediate/ICodeNode.h"

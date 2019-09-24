@@ -82,6 +82,8 @@ void PascalError::initialize()
         PascalErrorCode::UNIMPLEMENTED,
         PascalErrorCode::UNRECOGNIZABLE,
         PascalErrorCode::WRONG_NUMBER_OF_PARMS,
+        PascalErrorCode::MISSING_AGAIN,
+        PascalErrorCode::MISSING_RIGHT_ARROW,
 
         // Fatal errors.
         PascalErrorCode::IO_ERROR,
@@ -147,6 +149,8 @@ void PascalError::initialize()
         "Unimplemented feature",
         "Unrecognizable input",
         "Wrong number of actual parameters",
+        "Missing AGAIN",
+        "Missing ==>",
 
         // Fatal errors.
         "Object I/O error",
