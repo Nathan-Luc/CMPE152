@@ -60,7 +60,7 @@ ICodeNode *WhenStatementParser::parse_statement(Token *token) throw (string)
 
     // Create an IF node.
     ICodeNode *when_node =
-            ICodeFactory::create_icode_node((ICodeNodeType) NT_WHEN);
+            ICodeFactory::create_icode_node((ICodeNodeType) NT_IF);
 
 
     // Parse the expression.
@@ -80,9 +80,8 @@ ICodeNode *WhenStatementParser::parse_statement(Token *token) throw (string)
 
     // Parse the THEN statement.
     // The IF node adopts the statement subtree as its second child.
-    StatementParser statement_parser(this);
-    when_node->add_child(statement_parser.parse_statement(token));
-    token = current_token();
+    /*StatementParser statement_parser(this);
+    when_node->add_child(statement_parser.parse_statement(token));*/
 
     return when_node;
 }

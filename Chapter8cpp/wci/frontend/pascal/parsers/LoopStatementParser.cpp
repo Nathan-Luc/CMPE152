@@ -40,14 +40,14 @@ ICodeNode *LoopStatementParser::parse_statement(Token *token)
     StatementParser statement_parser(this);
     statement_parser.parse_list(token, loop_node, PT_AGAIN, MISSING_AGAIN);
 
-    token = current_token();
+    //token = current_token();
 
     // Parse the expression.
     // The TEST node adopts the expression subtree as its only child.
     // The LOOP node adopts the TEST node.
-  //  ExpressionParser expression_parser(this);
+    //ExpressionParser expression_parser(this);
     //test_node->add_child(expression_parser.parse_statement(token));
-    loop_node->add_child(test_node);
+    //loop_node->add_child(test_node);
 
     return loop_node;
 }

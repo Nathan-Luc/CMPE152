@@ -46,8 +46,8 @@ Object LoopExecutor::execute(ICodeNode *node)
             {
              
 
-                    vector<ICodeNode *> *children = child->get_children();
-                    expr_node = (*children)[0];
+                vector<ICodeNode *> *children = child->get_children();
+                expr_node = (*children)[0];
                
 
                 Object data_value = expression_executor.execute(expr_node);
