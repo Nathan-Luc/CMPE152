@@ -1,0 +1,10 @@
+BEGIN
+    i := 0;
+    
+    LOOP
+        i := i + 1;
+        WHEN i > 10 ==>;
+        i2 := i*i;
+        WHEN i2 > 50 ==>;
+    AGAIN
+END.
