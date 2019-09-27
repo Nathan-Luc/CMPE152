@@ -60,7 +60,7 @@ ICodeNode *WhenStatementParser::parse_statement(Token *token) throw (string)
 
     // Create an IF node.
     ICodeNode *when_node =
-            ICodeFactory::create_icode_node((ICodeNodeType) NT_IF);
+            ICodeFactory::create_icode_node((ICodeNodeType) NT_TEST);
 
 
     // Parse the expression.

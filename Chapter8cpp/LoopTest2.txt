@@ -6,5 +6,5 @@ BEGIN
         WHEN i > 10 ==>;
         i2 := i*i;
         WHEN i2 > 50 ==>;
-    AGAIN
+    AGAIN;
 END.
