@@ -1,0 +1,17 @@
+PROGRAM TimeTest;
+
+VAR
+    now, later: time;
+    wrong: time;
+
+BEGIN
+    now.hour   := 12;
+    now.minute := 15;
+    now.second := 37;
+
+    later := now;
+
+    wrong.hour   := 24;
+    wrong.minute := 60;
+    wrong.second := 0;
+END.
