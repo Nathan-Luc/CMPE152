@@ -1,11 +1,10 @@
 PROGRAM TimeTest;
 
 VAR
-    now, later: time;
-    wrong: time;
+    inti : integer;
 
 BEGIN
-	now := later;
-	now.hour := 0;
-	now.hour := later.hour;
+	writeln('Hello');
+	inti := 1;
+	writeln('Hello',inti);
 END.

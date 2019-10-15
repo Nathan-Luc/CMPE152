@@ -29,18 +29,22 @@ public:
     static TypeSpec *boolean_type;
     static TypeSpec *char_type;
     static TypeSpec *time_type;
-    static TypeSpec *hour_type;
+	static TypeSpec *hour_type;
+	static TypeSpec *minute_type;
+	static TypeSpec *second_type;
     static TypeSpec *undefined_type;
-    
+
     // Predefined identifiers.
     static SymTabEntry *integer_id;
     static SymTabEntry *real_id;
     static SymTabEntry *boolean_id;
     static SymTabEntry *char_id;
-    static SymTabEntry *time_id;
-    static SymTabEntry *hour_id;
-    static SymTabEntry *false_id;
+	static SymTabEntry *time_id;
+	static SymTabEntry *hour_id;
+	static SymTabEntry *minute_id;
+	static SymTabEntry *second_id;
     static SymTabEntry *true_id;
+    static SymTabEntry *false_id;
     static SymTabEntry *read_id;
     static SymTabEntry *readln_id;
     static SymTabEntry *write_id;
